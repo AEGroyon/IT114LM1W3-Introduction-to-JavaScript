@@ -154,7 +154,6 @@ let strictInequalityResult = (c !== d)
 // Answer: AND (&&), OR (||), NOT (!), Equality (==), Inequality (!=), 
 // Strict Equality (===), Strict Inequality (!==)
 
-
 // TODO 1.7 Try out the different relational operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators
 let x = 5
@@ -186,7 +185,9 @@ let strictNotEqualToResult = x !== y
 
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
-// Answer: 
+// Answer: [] == false evaluates to true in JavaScript. This happnes because when using loose equality (==),
+// the array is coerced to a primitive value, resulting in an empty string (""), and an empty string is 
+// considered falsy, leading to the equality being true.
 // Your code here
 let emptyArray = []
 let booleanValue = false
