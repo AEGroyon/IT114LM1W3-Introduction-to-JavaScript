@@ -193,7 +193,7 @@ let booleanValue = false
 
 // Using loose equality (==)
 let looseEqualityResult1 = emptyArray == booleanValue
-// USing strict equality (===)
+// Using strict equality (===)
 let strictEqualityResult1 = emptyArray === booleanValue
 
 
