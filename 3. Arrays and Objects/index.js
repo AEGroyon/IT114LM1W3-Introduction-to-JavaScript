@@ -89,6 +89,13 @@ console.log(`Total number of units this term: ${totalUnits}`)
 
 // Todo 3.6 Going back to the array of numbers, use the spread syntax to create a copy of the array with an additional number
 // Your code here
+const numbersCopy = [...numbers, 99]; // Creates a copy of the array with an additional number
+console.log(`\nOriginal numbers array: ${numbers}`);
+console.log(`Copied numbers array with an additional number: ${numbersCopy}`);
 
 // Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
 // Your code here
+const { courseCode: it114lCode, units: it114lUnits, ...rest } = IT114L;
+console.log(`\nIT114L Course Code: ${it114lCode}`);
+console.log(`IT114L Units: ${it114lUnits}`);
+console.log(`Rest of the IT114L Object:`, rest);
